@@ -70,5 +70,4 @@ describe '#Album' do
       expect(Album.all).to(eq([album2]))
     end
   end
-
 end
