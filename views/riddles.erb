@@ -1,0 +1,15 @@
+<h1>Riddles of the Spinx</h1>
+
+
+
+
+
+<% if @riddles.any? %>
+<ul>
+  <% @riddles.each do |riddle| %>
+  <li><a href="/albums/<%= riddle.id %>"><%= riddle.name %></a></li>
+  <% end %>
+</ul>
+<% else %>
+<p>There are currently no records to display.</p>
+<% end %>
